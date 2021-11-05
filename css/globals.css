@@ -38,14 +38,19 @@ Variables
 	--clr-grey-8: hsl(210, 31%, 80%);
 	--clr-grey-9: hsl(212, 33%, 89%);
 	--clr-grey-10: hsl(210, 36%, 96%);
+	/* white */
 	--clr-white: #fff;
+	/* other */
 	--ff-primary: "Lato", sans-serif;
 	--transition: all 0.3s linear;
 	--spacing: 0.25rem;
 	--radius: 0.5rem;
 	--light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 	--dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+	--linear-primary: hsla(185, 57%, 50%, 0.5);
+	--linear-back: hsla(0, 0%, 0%, 0.8);
 }
+
 /*
 =============== 
 Global Styles
@@ -57,6 +62,7 @@ Global Styles
 	padding: 0;
 	box-sizing: border-box;
 }
+
 body {
 	font-family: var(--ff-primary);
 	background: var(--clr-white);
@@ -64,19 +70,23 @@ body {
 	line-height: 1.5;
 	font-size: 0.875rem;
 }
+
 ul {
 	list-style-type: none;
 }
+
 a {
 	text-decoration: none;
 }
+
 img {
 	width: 100%;
 	display: block;
 }
+
 /* img:not(.nav-logo) {
-  width: 100%;
-  display: block;
+	width: 100%;
+	display: block;
 } */
 
 h1,
@@ -88,38 +98,49 @@ h4 {
 	line-height: 1.25;
 	margin-bottom: 0.75rem;
 }
+
 h1 {
 	font-size: 3rem;
 }
+
 h2 {
 	font-size: 2rem;
 }
+
 h3 {
 	font-size: 1.25rem;
 }
+
 h4 {
 	font-size: 0.875rem;
 }
+
 p {
 	margin-bottom: 1.25rem;
 	color: var(--clr-grey-5);
 }
+
 @media screen and (min-width: 800px) {
 	h1 {
 		font-size: 4rem;
 	}
+
 	h2 {
 		font-size: 2.5rem;
 	}
+
 	h3 {
 		font-size: 1.75rem;
 	}
+
 	h4 {
 		font-size: 1rem;
 	}
+
 	body {
 		font-size: 1rem;
 	}
+
 	h1,
 	h2,
 	h3,
@@ -143,6 +164,7 @@ p {
 	cursor: pointer;
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
+
 .btn:hover {
 	color: var(--clr-primary-1);
 	background: var(--clr-primary-8);
