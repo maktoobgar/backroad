@@ -1,0 +1,12 @@
+version: '3.9'
+
+services:
+  backroad:
+    container_name: backroad
+    image: nginx:alpine
+    restart: always
+    volumes:
+      - ./configs:/etc/nginx/conf.d
+      - ./:/project
+    ports:
+      - 3001:80
