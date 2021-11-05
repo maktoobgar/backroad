@@ -139,8 +139,8 @@ Services
 	display: inline-block;
 	font-size: 2rem;
 	margin-bottom: 1.5rem;
-    border-radius: 10%;
-    overflow: hidden;
+	border-radius: 10%;
+	overflow: hidden;
 }
 
 .service-text {
@@ -196,6 +196,103 @@ Services
 Featured Tours
 ===============
 */
+
+.featured-center {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.tour-img {
+	height: 15rem;
+	object-fit: cover;
+}
+
+.tour-card {
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+	overflow: hidden;
+	border-radius: 3%;
+	flex-basis: calc(100%);
+	margin-bottom: 3rem;
+	transition: var(--transition);
+}
+
+.tour-card:hover {
+	transform: scale(101%);
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+}
+
+.tour-img-container {
+	position: relative;
+}
+
+.tour-date {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	margin-bottom: 0;
+	background: var(--clr-primary-6);
+	color: var(--clr-grey-2);
+	padding: 0.25rem 0.5rem;
+	border-top-left-radius: 0.25rem;
+	text-transform: capitalize;
+}
+
+.tour-info {
+	background: var(--clr-primary-10);
+	padding: 1.5rem;
+}
+
+.tour-info > h4 {
+	position: relative;
+	margin-bottom: 1.25rem;
+}
+
+.tour-info > h4 > p {
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: var(--clr-grey-7);
+}
+
+.tour-footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.tour-footer p {
+	margin-bottom: 0;
+	flex-basis: calc(50% - 1rem);
+	text-align: center;
+	color: var(--clr-primary-4);
+	text-transform: capitalize;
+	line-height: 0;
+}
+
+.tour-footer p:first-of-type {
+	text-align: left;
+}
+
+.tour-footer p:last-of-type {
+	text-align: right;
+}
+
+.tour-btn {
+	text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+	.tour-card {
+		flex-basis: calc(50% - 1rem);
+	}
+}
+
+@media screen and (min-width: 1170px) {
+	.tour-card {
+		flex-basis: calc(33.33% - 1rem);
+	}
+}
 
 /*
 =============== 
