@@ -12,7 +12,9 @@ I put other links from him over here for more if you want to know him better:\
 <h2 style="clear: both;">Backroad</h2>
 
 This project is the second project that is gonna teach me how to use `html`, `css` in a real life after learning the concepts and common tags and properties.\
-If you want to see my first project and attempt of learning `html` and `css`, take a look at [this](https://github.com/maktoobgar/tea_project) repository or have a loot at the results in tea-project.maktoobgar.ir.
+If you want to see my first project and attempt of learning `html` and `css`, take a look at [this](https://github.com/maktoobgar/tea_project) repository or have a look at the results in tea-project.maktoobgar.ir.
+
+At this time(11/08/2021) the whole project is done and the results are accessible in backroad.maktoobgar.ir.
 
 ## Resources
 
@@ -34,4 +36,4 @@ All of the pictures used in this project, downloaded from [Pexels](https://www.p
 
 ## Demo
 
-I did nothing still, wait for the progress.
+![](./img/Demo.png)
