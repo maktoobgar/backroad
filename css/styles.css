@@ -300,6 +300,73 @@ Contact
 ===============
 */
 
+.contact {
+	background: var(--clr-primary-5);
+}
+
+.contact-title {
+	color: var(--clr-white);
+}
+
+.contact-title > p {
+	color: var(--clr-primary-8);
+}
+
+.contact-form {
+	display: flex;
+	/* flex-wrap: wrap; */
+	justify-content: space-between;
+}
+
+.form-control {
+	color: var(--clr-grey-5);
+	width: 80%;
+}
+
+.form-control, .btn-submit {
+	flex: 1 1 auto;
+	padding: 0.25rem 0.5rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	font-weight: 300;
+	letter-spacing: var(--spacing);
+	background: var(--clr-white);
+	text-transform: capitalize;
+	border: transparent;
+	border-radius: 0.25rem;
+}
+
+.form-control::placeholder {
+	color: inherit;
+}
+
+.btn-submit {
+	font-family: var(--ff-primary);
+	margin-left: 0.5rem;
+	background: var(--clr-primary-8);
+	color: var(--clr-primary-1);
+	cursor: pointer;
+	transition: var(--transition);
+}
+
+.btn-submit:hover {
+	background: var(--clr-primary-1);
+	color: var(--clr-primary-5);
+}
+
+@media screen and (min-width: 992px) {
+	.contact-center {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.contact-form {
+		align-self: flex-start;
+		flex: 1 1 auto;
+		padding-left: 2rem;
+	}
+}
+
 /*
 =============== 
 Gallery
