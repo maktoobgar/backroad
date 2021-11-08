@@ -6,6 +6,125 @@ Navbar
 ===============
 */
 
+.navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: var(--clr-white);
+	box-shadow: var(--dark-shadow);
+	z-index: 4;
+}
+
+.nav-icons {
+	display: none;
+}
+
+.nav-center {
+	width: 100%;
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+.nav-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 2rem;
+}
+
+.nav-toggle {
+	background: transparent;
+	border: transparent;
+	font-size: 1.5rem;
+	color: var(--clr-primary-5);
+	cursor: pointer;
+	transition: var(--transition);
+}
+
+.nav-toggle:hover {
+	transform: scale(1.2);
+}
+
+.nav-link {
+	display: block;
+	padding: 1rem 2rem;
+	text-transform: capitalize;
+	letter-spacing: var(--spacing);
+	transition: var(--transition);
+	color: var(--clr-grey-1);
+	cursor: pointer;
+	font-size: 1rem;
+}
+
+.nav-link:hover {
+	color: var(--clr-primary-1);
+	background: var(--clr-primary-8);
+	padding-left: 2.25rem;
+}
+
+.nav-links {
+	height: 0;
+	overflow: hidden;
+	transition: var(--transition);
+}
+
+.show-links {
+	height: 280px;
+}
+
+@media screen and (min-width: 992px) {
+	.navbar {
+		padding: 1rem 2rem;
+	}
+
+	.nav-toggle {
+		display: none;
+	}
+
+	.nav-links {
+		height: auto;
+		display: flex;
+	}
+
+	.nav-link {
+		padding: 0 0;
+		margin-right: 0.7rem;
+	}
+
+	.nav-link:hover {
+		padding: 0;
+		color: var(--clr-primary-5);
+		background: transparent;
+	}
+
+	.nav-icons {
+		display: flex;
+	}
+
+	.nav-icon {
+		margin-right: 0.7rem;
+		color: var(--clr-primary-5);
+		font-size: 1.2rem;
+		transition: var(--transition);
+	}
+
+	.nav-icon:hover {
+		color: var(--clr-primary-8);
+	}
+
+	.nav-center {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.nav-header {
+		padding: 0 0;
+	}
+}
+
 /*
 =============== 
 Hero
@@ -205,6 +324,7 @@ Featured Tours
 
 .tour-img {
 	height: 15rem;
+	-o-object-fit: cover;
 	object-fit: cover;
 }
 
@@ -323,7 +443,8 @@ Contact
 	width: 80%;
 }
 
-.form-control, .btn-submit {
+.form-control,
+.btn-submit {
 	flex: 1 1 auto;
 	padding: 0.25rem 0.5rem;
 	font-size: 1rem;
@@ -334,6 +455,22 @@ Contact
 	text-transform: capitalize;
 	border: transparent;
 	border-radius: 0.25rem;
+}
+
+.form-control::-webkit-input-placeholder {
+	color: inherit;
+}
+
+.form-control::-moz-placeholder {
+	color: inherit;
+}
+
+.form-control:-ms-input-placeholder {
+	color: inherit;
+}
+
+.form-control::-ms-input-placeholder {
+	color: inherit;
 }
 
 .form-control::placeholder {
@@ -394,6 +531,7 @@ Gallery
 
 .gallery-img {
 	height: 17rem;
+	-o-object-fit: cover;
 	object-fit: cover;
 	transition: var(--transition);
 }
@@ -435,7 +573,8 @@ Footer
 	padding-right: 2rem;
 }
 
-.footer-links, .footer-icons {
+.footer-links,
+.footer-icons {
 	display: flex;
 	justify-content: center;
 	margin-bottom: 1.5rem;
