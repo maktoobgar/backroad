@@ -373,6 +373,55 @@ Gallery
 ===============
 */
 
+.gallery-img-container {
+	position: relative;
+	background-color: var(--clr-primary-5);
+	z-index: 3;
+}
+
+.gallery-icon {
+	font-size: 2rem;
+	position: absolute;
+	z-index: 1;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	color: var(--clr-white);
+	opacity: 0;
+	cursor: pointer;
+	transition: var(--transition);
+}
+
+.gallery-img {
+	height: 17rem;
+	object-fit: cover;
+	transition: var(--transition);
+}
+
+.gallery-img-container:hover .gallery-img {
+	opacity: 50%;
+}
+
+.gallery-img-container:hover .gallery-icon {
+	opacity: 100%;
+}
+
+@media screen and (min-width: 768px) {
+	.gallery-center {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.gallery-img-container {
+		flex: 0 1 50%;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.gallery-img-container {
+		flex: 0 1 25%;
+	}
+}
+
 /*
 =============== 
 Footer
